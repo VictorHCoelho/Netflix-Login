@@ -53,7 +53,7 @@ form {
     margin-bottom: 90px;
 }
 
-form input[type=text], form input[type=password], form button {
+form input, form input, form button {
     height: 50px;
     border: none;    
     border-radius: 5px;    
@@ -61,10 +61,15 @@ form input[type=text], form input[type=password], form button {
     font-size: 17px;
 }
 
-form input[type=text], form input[type=password] {
+form input {
     background-color: #333;        
     padding: 20px;    
     margin: 8px 0;        
+}
+
+form input:focus {
+    outline: none;
+    background-color: #454545;
 }
 
 form button {
